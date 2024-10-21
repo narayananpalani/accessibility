@@ -1,0 +1,17 @@
+meta {
+  name: Create A Project
+  type: http
+  seq: 7
+}
+
+post {
+  url: http://localhost:8080/api/projects
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "name": "web accessibility project"
+  }
+}

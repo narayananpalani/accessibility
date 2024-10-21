@@ -1,0 +1,28 @@
+meta {
+  name: Update A Project
+  type: http
+  seq: 8
+}
+
+put {
+  url: http://localhost:8080/api/projects/1
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "id": 1,
+    "name": "web accessibility project",
+    "description": null,
+    "rules": [
+               {
+    "id": 2,
+    "name": "Non Text Content",
+    "description": null,
+    "completed": null,
+    "dueDate":null
+               }
+            ]
+  }
+}
